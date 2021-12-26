@@ -1,0 +1,8 @@
+name: My first workflow
+on: [push]
+jobs:
+    print-hello-world:
+        runs-on: ubuntu-latest
+        steps:
+            - run: eco 'Hello program'
+            - run: eco 'This is step 2'
