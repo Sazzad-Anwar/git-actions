@@ -1,8 +1,8 @@
 name: My first workflow
 on: [push]
 jobs:
-    print-hello-world:
+    build-app:
         runs-on: ubuntu-latest
         steps:
-            - run: echo 'Hello program'
-            - run: echo 'This is step 2'
+            - uses: actions/checkout@v2
+            - run: tree
